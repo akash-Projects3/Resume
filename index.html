@@ -5,140 +5,197 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akash Mole - Resume</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400&display=swap');
-
+    /* Global Styles */
     body {
-        font-family: 'Charter', serif;
-        margin: 0.9cm 0.9cm 0.5cm 0.9cm;
-        color: #000;
-        line-height: 1.3;
-    }
-    h1 {
-        font-size: 25pt;
-        line-height: 1.5;
+        font-family: 'Inter', sans-serif;
+        background-color: #f4f6f8;
         margin: 0;
-        text-align: center;
+        padding: 0;
+        color: #1a1a1a;
+        line-height: 1.6;
     }
+
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        background-color: #fff;
+        padding: 40px 50px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #111;
+    }
+
     .contact {
         text-align: center;
-        margin: 5pt 0 15pt 0;
-        font-size: 0.9rem;
+        margin-bottom: 30px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #555;
     }
+
+    .contact a {
+        text-decoration: none;
+        color: #1a73e8;
+        transition: color 0.2s ease;
+    }
+
+    .contact a:hover {
+        color: #0c47b7;
+    }
+
     .contact i {
-        margin-right: 4px;
+        margin-right: 6px;
+        color: #1a73e8;
     }
-    .contact span {
-        margin: 0 5px;
-    }
+
     section {
-        margin-bottom: 10pt;
+        margin-bottom: 25px;
     }
+
     section h2 {
-        font-weight: bold;
-        font-size: 1.2rem;
-        margin-bottom: 2pt;
-        border-bottom: 1px solid #000;
-        padding-bottom: 2pt;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #111;
+        border-bottom: 2px solid #1a73e8;
+        padding-bottom: 6px;
+        margin-bottom: 15px;
     }
-    .subheading {
-        font-weight: bold;
+
+    .job, .project, .education {
+        margin-bottom: 15px;
+    }
+
+    .job .title, .project .title, .education .title {
         display: flex;
         justify-content: space-between;
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin-bottom: 4px;
+        color: #222;
     }
+
     ul {
-        list-style-type: disc;
-        padding-left: 1.2rem;
-        margin-top: 2pt;
-        margin-bottom: 5pt;
+        padding-left: 20px;
+        margin: 5px 0 10px 0;
     }
+
     li {
-        margin-bottom: 2pt;
+        margin-bottom: 6px;
+    }
+
+    /* Responsive */
+    @media (max-width: 650px) {
+        .job .title, .project .title, .education .title {
+            flex-direction: column;
+            gap: 4px;
+        }
+        .container {
+            padding: 25px 20px;
+        }
     }
 </style>
 </head>
 <body>
+<div class="container">
+    <h1>Akash Mole</h1>
+    <div class="contact">
+        <i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India <span>|</span>
+        <i class="fas fa-phone"></i> 6360091939 <span>|</span>
+        <i class="fas fa-envelope"></i> <a href="mailto:akashmole1@gmail.com">akashmole1@gmail.com</a> <span>|</span>
+        <i class="fab fa-github"></i> <a href="https://github.com/akash-Projects3">GitHub</a> <span>|</span>
+        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/akash-mole-2728302b7">LinkedIn</a>
+    </div>
 
-<h1>Akash Mole</h1>
-<div class="contact">
-    <i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India <span>|</span>
-    <i class="fas fa-phone"></i> 6360091939 <span>|</span>
-    <i class="fas fa-envelope"></i> <a href="mailto:akashmole1@gmail.com">akashmole1@gmail.com</a> <span>|</span>
-    <i class="fab fa-github"></i> <a href="https://github.com/akash-Projects3">GitHub</a> <span>|</span>
-    <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/akash-mole-2728302b7">LinkedIn</a>
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Computer Science and Engineering student with hands-on experience in full stack development, SQL, machine learning, n8n automation, and Docker. Skilled in building scalable web applications, designing database-driven systems, and automating workflows. Seeking opportunities to leverage technical expertise to deliver impactful solutions.</p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <div class="job">
+            <div class="title">
+                <span>Full Stack Development Intern</span>
+                <span>Feb 2023 – Mar 2023</span>
+            </div>
+            <p>Winsoft Solutions – Hubballi</p>
+            <ul>
+                <li>Engineered <strong>Infopedia</strong>, an information management platform, improving data retrieval efficiency by 30%.</li>
+                <li>Resolved 25+ critical bugs and implemented 10+ new features, enhancing system performance and user experience.</li>
+                <li>Applied best practices in database management and responsive web design.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>University Projects</h2>
+        <div class="project">
+            <div class="title">Smart Site Management System</div>
+            <ul>
+                <li>Built a system integrating <strong>Machine Learning, Full Stack Development, and SQL</strong> to optimize construction site workflows, reducing manual errors by 20%.</li>
+                <li>Designed interactive dashboards with analytics for improved resource management and informed decision-making.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <div class="title">Infopedia – Knowledge Sharing Platform</div>
+            <ul>
+                <li>Developed a centralized knowledge-sharing portal for efficient organization and access to information.</li>
+                <li>Implemented secure user authentication, structured content management, and database-driven search features, improving knowledge retrieval by 40%.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education">
+            <div class="title">
+                <span>B.Tech in Computer Science and Engineering</span>
+                <span>2023 – 2026 (Expected)</span>
+            </div>
+            <p>MVJ College of Engineering – Bengaluru<br>CGPA: 7.6 / 10</p>
+        </div>
+        <div class="education">
+            <div class="title">
+                <span>Diploma in Computer Science and Engineering</span>
+                <span>2020 – 2023</span>
+            </div>
+            <p>B.V.V.S Polytechnic – Bagalkot<br>Percentage: 80%</p>
+        </div>
+        <div class="education">
+            <div class="title">
+                <span>10th – ST. Peter’s English Medium CBSE School</span>
+                <span>2018 – 2019</span>
+            </div>
+            <p>Harugeri</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: Python, Java, C, SQL</li>
+            <li>Web Development: Full Stack Development (HTML, CSS, JavaScript, PHP, React)</li>
+            <li>Databases: MySQL, DBMS</li>
+            <li>Tools & Platforms: Git, VS Code, Replit, n8n, Automation, Docker</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Full Stack Web Development Internship Certificate – Winsoft Solutions, Hubballi</li>
+        </ul>
+    </section>
 </div>
-
-<section>
-    <h2>Professional Summary</h2>
-    <p>Computer Science and Engineering student with hands-on experience in full stack development, SQL, machine learning, n8n automation, and Docker. Skilled in building scalable web applications, designing database-driven systems, and automating workflows. Seeking opportunities to leverage technical expertise to deliver impactful solutions.</p>
-</section>
-
-<section>
-    <h2>Experience</h2>
-    <div class="subheading">
-        <span>Full Stack Development Intern</span>
-        <span>Feb 2023 – Mar 2023</span>
-    </div>
-    <p>Winsoft Solutions – Hubballi</p>
-    <ul>
-        <li>Engineered <strong>Infopedia</strong>, an information management platform, improving data retrieval efficiency by 30%.</li>
-        <li>Resolved 25+ critical bugs and implemented 10+ new features, enhancing system performance and user experience.</li>
-        <li>Applied best practices in database management and responsive web design.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>University Projects</h2>
-    <div class="subheading">Smart Site Management System</div>
-    <ul>
-        <li>Built a system integrating <strong>Machine Learning, Full Stack Development, and SQL</strong> to optimize construction site workflows, reducing manual errors by 20%.</li>
-        <li>Designed interactive dashboards with analytics for improved resource management and informed decision-making.</li>
-    </ul>
-
-    <div class="subheading">Infopedia – Knowledge Sharing Platform</div>
-    <ul>
-        <li>Developed a centralized knowledge-sharing portal for efficient organization and access to information.</li>
-        <li>Implemented secure user authentication, structured content management, and database-driven search features, improving knowledge retrieval by 40%.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Education</h2>
-    <div class="subheading">
-        <span>B.Tech in Computer Science and Engineering</span>
-        <span>2023 – 2026 (Expected)</span>
-    </div>
-    <p>MVJ College of Engineering – Bengaluru<br>CGPA: 7.6 / 10</p>
-
-    <div class="subheading">
-        <span>Diploma in Computer Science and Engineering</span>
-        <span>2020 – 2023</span>
-    </div>
-    <p>B.V.V.S Polytechnic – Bagalkot<br>Percentage: 80%</p>
-
-    <div class="subheading">
-        <span>10th – ST. Peter’s English Medium CBSE School</span>
-        <span>2018 – 2019</span>
-    </div>
-    <p>Harugeri</p>
-</section>
-
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Programming: Python, Java, C, SQL</li>
-        <li>Web Development: Full Stack Development (HTML, CSS, JavaScript, PHP, React)</li>
-        <li>Databases: MySQL, DBMS</li>
-        <li>Tools & Platforms: Git, VS Code, Replit, n8n, Automation, Docker</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Certifications</h2>
-    <ul>
-        <li>Full Stack Web Development Internship Certificate – Winsoft Solutions, Hubballi</li>
-    </ul>
-</section>
-
 </body>
 </html>
+
